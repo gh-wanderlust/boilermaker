@@ -46,7 +46,7 @@ router.delete('/:id', async (req: any, res: any, next) => {
      const id = req.params
         await User.destroy({
           where: {
-            userId: id
+            id: id
             }
           })
         res.status(204).end()
